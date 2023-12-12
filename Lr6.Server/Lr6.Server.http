@@ -1,0 +1,6 @@
+@Lr6.Server_HostAddress = http://localhost:5254
+
+GET {{Lr6.Server_HostAddress}}/products/
+Accept: application/json
+
+###

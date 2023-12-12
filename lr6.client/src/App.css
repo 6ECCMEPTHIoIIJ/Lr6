@@ -1,0 +1,41 @@
+﻿#root {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    align-self: flex-start;
+}
+
+tr:nth-child(even) {
+    background: #F2F2F2;
+}
+
+tr:nth-child(odd) {
+    background: #FFF;
+}
+
+th, td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
+.cool-header {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 50vh;
+    padding: 0px;
+    position: static;
+    top: 0;
+}
