@@ -1,7 +1,7 @@
 ﻿#root {
     width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    padding-top: 70px;
     text-align: center;
     align-self: flex-start;
 }
@@ -20,7 +20,7 @@ th, td {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none
 }
 
 ::-webkit-scrollbar {
@@ -31,11 +31,23 @@ ul {
     -webkit-overflow-scrolling: touch;
 }
 
-.cool-header {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 50vh;
-    padding: 0px;
-    position: static;
-    top: 0;
+.left-col {
+    background-color: #F2F2F2;
+    padding: 2rem;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+}
+
+.right-col {
+    padding: 2rem;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+}
+
+.top-bar {
+    height: 70px;
+}
+
+.submit-button {
+    width: 150px;
 }

@@ -51,11 +51,13 @@ namespace Lr6.Server.Controllers
         public async Task<IActionResult> PutProduct(int id, Product product)
         {
             if (id != product.Id)
-            {
                 return BadRequest();
-            }
 
-            _context.Entry(product).State = EntityState.Modified;
+            var modifiedProduct = await _context.Products.FindAsync(id);
+            if (modifiedProduct == null)
+                return NotFound();
+
+            modifiedProduct.ImageUrl = product.ImageUrl;
 
             try
             {
